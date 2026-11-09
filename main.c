@@ -3,7 +3,7 @@
 int main(void)
 {
   int number;
-  long sum=0;
+  long long sum=0;
   scanf("%d",&number);
   
   if(number<0)
@@ -24,9 +24,9 @@ int main(void)
     {
       continue;
     }
-    sum + = value;
+    sum += value;
   }
-  printf("%ld",sum);
+  printf("%lld",sum);
   
   return 0;
 }
