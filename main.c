@@ -13,7 +13,7 @@ int main(void)
   }
 
   /*1からnumberまで順番に調べる*/
-  for(int value=1; value++)
+  for(int value=1; value++;)
   {
     if (value>number)
     {
