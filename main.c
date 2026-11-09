@@ -1,2 +1,28 @@
 #include <stdio.h>
-int main(void){int a;long s=0;scanf("%d",&a);if(a<0){printf("NG");return 0;}for(int i=1;;i++){if(i>a)break;if(i%3==0||i%5==0)continue;s+=i;}printf("%ld",s);return 0;}
+
+int main(void)
+{
+  int number;
+  long long sum=0;
+  scanf("%d",&number);
+  
+  if(number<0)
+  {
+    printf("NG");
+    return 0;
+  }
+
+  /*1からnumberまで順番に調べる*/
+  for(int value=1; value<=number; value++)
+  {
+    /*3の倍数または5の倍数は加算しない*/
+    if(value%3==0||value%5==0)
+    {
+      continue;
+    }
+    sum + = value;
+  }
+  printf("%ld",sum);
+  
+  return 0;
+}
